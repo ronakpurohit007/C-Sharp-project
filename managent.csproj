@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{052E7AAF-61C8-4BDD-B21C-3DFC74E940A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>managent</RootNamespace>
+    <AssemblyName>managent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminLeave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLeave.Designer.cs">
+      <DependentUpon>AdminLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Menu.Designer.cs">
+      <DependentUpon>Admin_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADSalary.Designer.cs">
+      <DependentUpon>ADSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ad_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ad_menu.Designer.cs">
+      <DependentUpon>ad_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ad_signUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ad_signUp.Designer.cs">
+      <DependentUpon>ad_signUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emploee_Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emploee_Salary.Designer.cs">
+      <DependentUpon>Emploee_Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeList.Designer.cs">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesdbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesdbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesdbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesdbDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesdbDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesdbDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesdbDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesdbDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesdbDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesdbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesdbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesdbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesdbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesdbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesdbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesdbDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesdbDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesdbDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesdbDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesdbDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesdbDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesdbDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesdbDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesdbDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesdbDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Data.Designer.cs">
+      <DependentUpon>Employee_Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Menu.Designer.cs">
+      <DependentUpon>Employee_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employye_Leave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employye_Leave.Designer.cs">
+      <DependentUpon>Employye_Leave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="privat.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salary.cs" />
+    <Compile Include="Sub.cs" />
+    <Compile Include="sub_2.cs" />
+    <Compile Include="ty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ty.Designer.cs">
+      <DependentUpon>ty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tyList.Designer.cs">
+      <DependentUpon>tyList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminLeave.resx">
+      <DependentUpon>AdminLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Menu.resx">
+      <DependentUpon>Admin_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADSalary.resx">
+      <DependentUpon>ADSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ad_menu.resx">
+      <DependentUpon>ad_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ad_signUp.resx">
+      <DependentUpon>ad_signUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emploee_Salary.resx">
+      <DependentUpon>Emploee_Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeList.resx">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Data.resx">
+      <DependentUpon>Employee_Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Menu.resx">
+      <DependentUpon>Employee_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employye_Leave.resx">
+      <DependentUpon>Employye_Leave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ty.resx">
+      <DependentUpon>ty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tyList.resx">
+      <DependentUpon>tyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="EmployeesdbDataSet.xsc">
+      <DependentUpon>EmployeesdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesdbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesdbDataSet.xss">
+      <DependentUpon>EmployeesdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet1.xsc">
+      <DependentUpon>EmployeesdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesdbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesdbDataSet1.xss">
+      <DependentUpon>EmployeesdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet10.xsc">
+      <DependentUpon>EmployeesdbDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesdbDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesdbDataSet10.xss">
+      <DependentUpon>EmployeesdbDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet11.xsc">
+      <DependentUpon>EmployeesdbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesdbDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesdbDataSet11.xss">
+      <DependentUpon>EmployeesdbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet12.xsc">
+      <DependentUpon>EmployeesdbDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesdbDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesdbDataSet12.xss">
+      <DependentUpon>EmployeesdbDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet2.xsc">
+      <DependentUpon>EmployeesdbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesdbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesdbDataSet2.xss">
+      <DependentUpon>EmployeesdbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet3.xsc">
+      <DependentUpon>EmployeesdbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesdbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesdbDataSet3.xss">
+      <DependentUpon>EmployeesdbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet4.xsc">
+      <DependentUpon>EmployeesdbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesdbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesdbDataSet4.xss">
+      <DependentUpon>EmployeesdbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet5.xsc">
+      <DependentUpon>EmployeesdbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesdbDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesdbDataSet5.xss">
+      <DependentUpon>EmployeesdbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet6.xsc">
+      <DependentUpon>EmployeesdbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesdbDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesdbDataSet6.xss">
+      <DependentUpon>EmployeesdbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet7.xsc">
+      <DependentUpon>EmployeesdbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesdbDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesdbDataSet7.xss">
+      <DependentUpon>EmployeesdbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet8.xsc">
+      <DependentUpon>EmployeesdbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesdbDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesdbDataSet8.xss">
+      <DependentUpon>EmployeesdbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet9.xsc">
+      <DependentUpon>EmployeesdbDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeesdbDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesdbDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeesdbDataSet9.xss">
+      <DependentUpon>EmployeesdbDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="img\computer-login-concept-illustration_114360-7962.webp" />
+    <None Include="img\icon\icons8-admin-settings-male-color.zip" />
+    <None Include="img\icon\icons8-arrow-ios-glyph.zip" />
+    <None Include="img\icon\icons8-cash-in-hand-ios-glyph.zip" />
+    <None Include="img\icon\icons8-cash-in-hand-ios.zip" />
+    <None Include="img\icon\icons8-list-view-ios-glyph.zip" />
+    <None Include="img\icon\icons8-logout-ios-glyph.zip" />
+    <None Include="img\icon\icons8-password-ios-glyph.zip" />
+    <None Include="img\icon\icons8-reply-arrow-ios-glyph.zip" />
+    <None Include="img\icon\icons8-search-color.zip" />
+    <None Include="img\icon\icons8-test-account-ios-glyph.zip" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Employeesdb.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\20220813_150650.png" />
+    <Content Include="img\account-login-password-key-computer-man-near-vector-male-character-design-concept-landing-page-web-poster-banner-184009994.jpg" />
+    <Content Include="img\banner-img.png" />
+    <Content Include="img\fd0cae24d5a5f07c5f2bc57b90e10312.png" />
+    <Content Include="img\gif\conference-call--v2.gif" />
+    <Content Include="img\gif\logout-rounded--v2.gif" />
+    <Content Include="img\gif\reply-arrow--v2.gif" />
+    <Content Include="img\icons8-male-user.gif" />
+    <Content Include="img\icon\icons8-admin-settings-male-48.png" />
+    <Content Include="img\icon\icons8-admin-settings-male-96.png" />
+    <Content Include="img\icon\icons8-arrow-30.png" />
+    <Content Include="img\icon\icons8-arrow-60.png" />
+    <Content Include="img\icon\icons8-arrow-90.png" />
+    <Content Include="img\icon\icons8-cash-in-hand-100.png" />
+    <Content Include="img\icon\icons8-cash-in-hand-30.png" />
+    <Content Include="img\icon\icons8-cash-in-hand-50.png" />
+    <Content Include="img\icon\icons8-cash-in-hand-60.png" />
+    <Content Include="img\icon\icons8-cash-in-hand-90.png" />
+    <Content Include="img\icon\icons8-list-view-30.png" />
+    <Content Include="img\icon\icons8-list-view-60.png" />
+    <Content Include="img\icon\icons8-list-view-90.png" />
+    <Content Include="img\icon\icons8-logout-30.png" />
+    <Content Include="img\icon\icons8-logout-60.png" />
+    <Content Include="img\icon\icons8-logout-90.png" />
+    <Content Include="img\icon\icons8-password-30.png" />
+    <Content Include="img\icon\icons8-password-60.png" />
+    <Content Include="img\icon\icons8-password-90.png" />
+    <Content Include="img\icon\icons8-reply-arrow-30.png" />
+    <Content Include="img\icon\icons8-reply-arrow-60.png" />
+    <Content Include="img\icon\icons8-reply-arrow-90.png" />
+    <Content Include="img\icon\icons8-search-48.png" />
+    <Content Include="img\icon\icons8-search-96.png" />
+    <Content Include="img\icon\icons8-test-account-30.png" />
+    <Content Include="img\icon\icons8-test-account-60.png" />
+    <Content Include="img\icon\icons8-test-account-90.png" />
+    <Content Include="img\icon\icons8-three-men-100.png" />
+    <Content Include="img\images.jpg" />
+    <Content Include="img\login-illustration-mahisadd.jpg" />
+    <Content Include="img\login.png" />
+    <Content Include="img\online-registration-or-sign-up-login-for-account-on-smartphone-app-user-interface-with-secure-password-mobile-application-for-ui-web-banner-access-cartoon-people-illustration-vector.jpg" />
+    <None Include="Resources\icons8-find-user-male-30.png" />
+    <None Include="Resources\icons8-search-48.png" />
+    <None Include="Resources\icons8-menu-rounded-30.png" />
+    <None Include="Resources\1101.jpg" />
+    <None Include="Resources\icons8-cash-in-hand-100.png" />
+    <None Include="Resources\Screenshot %28320%29.png" />
+    <None Include="Resources\127-1272225_technologies-we-work-with-illustration-computer-business-hd.png" />
+    <None Include="Resources\pngegg%287%291.png" />
+    <None Include="Resources\Leave-management-Banner.png" />
+    <None Include="Resources\icons8-money-90.png" />
+    <None Include="Resources\pngegg%288%29.png" />
+    <None Include="Resources\canvas.png" />
+    <None Include="Resources\168-1680152_employee-on-leave-illustration-hd-png-download.png" />
+    <None Include="Resources\pngegg%286%29.png" />
+    <None Include="Resources\icons8-three-men-100.png" />
+    <None Include="Resources\wd-applet-employee-on-leave.png" />
+    <None Include="Resources\pngegg%287%29.png" />
+    <None Include="Resources\pngegg%283%29.png" />
+    <None Include="Resources\pngegg%2811%29.png" />
+    <None Include="Resources\pngegg%285%29.png" />
+    <None Include="Resources\icons8-logout-302.png" />
+    <None Include="Resources\icons8-money-30.png" />
+    <None Include="Resources\icons8-list-view-301.png" />
+    <None Include="Resources\icons8-list-64.png" />
+    <None Include="Resources\pngegg%2812%29.png" />
+    <None Include="Resources\isometric-icon-relieved-man-finished-his-work-office-d-vector-illustration-office-work-icon-220147182.jpg" />
+    <None Include="Resources\110.jpg" />
+    <None Include="Resources\838-8380800_png-free-stock-clickonsite-telecom-infrastructure-project-clipart.jpg" />
+    <None Include="Resources\35-354722_office-teamwork-clipart-png-download-people-working-together.png" />
+    <None Include="Resources\pngegg%282%29.png" />
+    <None Include="Resources\pngegg1.png" />
+    <None Include="Resources\pngegg%281%291.png" />
+    <None Include="Resources\icons8-admin-settings-male-961.png" />
+    <None Include="Resources\pngegg%284%29.png" />
+    <None Include="Resources\icons8-logout-301.png" />
+    <None Include="Resources\icons8-multiply-30.png" />
+    <None Include="Resources\pngegg.png" />
+    <None Include="Resources\icons8-cash-in-hand-30.png" />
+    <None Include="Resources\icons8-test-account-30.png" />
+    <None Include="Resources\icons8-logout-30.png" />
+    <None Include="Resources\icons8-admin-settings-male-48.png" />
+    <None Include="Resources\icons8-list-view-30.png" />
+    <None Include="Resources\pngegg%281%29.png" />
+    <None Include="Resources\icons8-admin-settings-male-96.png" />
+    <None Include="Resources\banner-img1.png" />
+    <None Include="Resources\banner-img.png" />
+    <None Include="Resources\conference-call--v2.gif" />
+    <None Include="Resources\account-login-password-key-computer-man-near-vector-male-character-design-concept-landing-page-web-poster-banner-184009994.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
